@@ -10,8 +10,6 @@ export class TreeComponent implements OnInit {
 
   @Input()
   node: NodeModel;
-  @Input()
-  checked: boolean;
 
   displayAddModal: boolean;
   displayEditModal: boolean;

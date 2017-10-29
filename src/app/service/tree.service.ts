@@ -1,5 +1,4 @@
 import { NodeModel } from '../model/node-model';
-
 import { Injectable } from '@angular/core';
 
 @Injectable()

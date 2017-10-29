@@ -1,5 +1,4 @@
 import { TreeService } from '../service/tree.service';
-
 import { NodeModel } from '../model/node-model';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
