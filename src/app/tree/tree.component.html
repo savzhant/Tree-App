@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    <li>
+      {{node.header}}
+      <add-node [display]="displayAddModal" [node]="node" (onAdd)="onAddButtonClick($event)" (onClose)="onCloseModalClick($event)"></add-node>
+      <edit-node [display]="displayEditModal" [node]="node" (onEdit)="onEditButtonClick($event)" (onClose)="onCloseModalClick($event)"></edit-node>
+      <remove-node [node]="node"></remove-node>
+    </li>
+    <div *ngIf="!isLeaf(node)">
+      <ul *ngFor="let child of node.children">
+        <app-tree [node]="child"></app-tree>
+      </ul>
+    </div>
+  </ul>
+</div>

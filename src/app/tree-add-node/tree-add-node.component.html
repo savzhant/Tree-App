@@ -1,0 +1,9 @@
+<p-dialog [(visible)]="display" (onHide)="onCloseClick()">
+  <p-header>Add to {{node.header}}</p-header>
+  <div>
+    <span>Header: </span>
+    <input type="text" [(ngModel)]="nodeHeader">
+    <button pButton type="button" class="ui-button-success" icon="fa-check" (click)="onSaveNodeClick()"></button>
+  </div>
+</p-dialog>
+<button pButton type="button" class="ui-button-info" icon="fa-plus" (click)="onAddClick()"></button>
